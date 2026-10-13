@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pink Boutique</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #fff7fa;
+    color: #444;
+    text-align: center;
+}
+
+header {
+    background: #edb5ca;
+    padding: 25px;
+}
+
+header h1 {
+    color: white;
+    font-size: 35px;
+    margin: 0;
+}
+
+nav {
+    background: white;
+    padding: 15px;
+}
+
+nav a {
+    color: #bd6689;
+    text-decoration: none;
+    margin: 12px;
+    font-weight: bold;
+}
+
+.portada {
+    padding: 45px 20px;
+}
+
+.portada h2 {
+    color: #c76e91;
+    font-size: 30px;
+}
+
+.catalogo {
+    padding: 25px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.producto {
+    background: white;
+    width: 220px;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #e8cbd6;
+}
+
+.producto img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.precio {
+    color: #c76e91;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton {
+    display: inline-block;
+    background: #d77fa0;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 7px;
+    text-decoration: none;
+    margin: 8px;
+}
+
+footer {
+    background: #edb5ca;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+@media (max-width: 500px) {
+    .producto {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Pink Boutique</h1>
+    <p>Moda, estilo y belleza ♡</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Productos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section class="portada" id="inicio">
+    <h2>¡Encuentra tu estilo!</h2>
+    <p>Descubre prendas bonitas para cada ocasión.</p>
+    <a class="boton" href="#catalogo">Ver colección</a>
+</section>
+
+<section class="catalogo" id="catalogo">
+    <h2>Nuestros productos</h2>
+
+    <div class="productos">
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500"
+                 alt="Vestido rosa">
+            <h3>Vestido elegante</h3>
+            <p>Ideal para ocasiones especiales.</p>
+            <p class="precio">$699 MXN</p>
+            <a class="boton" href="https://wa.me/526560000000">
+                Comprar
+            </a>
+        </div>
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1551163943-3f6a855d1153?w=500"
+                 alt="Blusa de mujer">
+            <h3>Blusa casual</h3>
+            <p>Combina con todos tus outfits.</p>
+            <p class="precio">$399 MXN</p>
+            <a class="boton" href="https://wa.me/526560000000">
+                Comprar
+            </a>
+        </div>
+
+        <div class="producto">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=500"
+                 alt="Pantalón de moda">
+            <h3>Pantalón moderno</h3>
+            <p>Comodidad para todos los días.</p>
+            <p class="precio">$549 MXN</p>
+            <a class="boton" href="https://wa.me/526560000000">
+                Comprar
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>¡Contáctanos!</h2>
+    <p>Estamos listas para ayudarte a elegir tu outfit.</p>
+    <a class="boton" href="https://wa.me/526560000000">
+        Escríbenos por WhatsApp
+    </a>
+</section>
+
+<footer>
+    <p>Pink Boutique ♡</p>
+    <p>Gracias por visitarnos</p>
+</footer>
+
+</body>
+</html>
